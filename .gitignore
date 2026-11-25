@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Logisim / 数字电路实验
+*.circ.bak
+*.circ~
+
+# Verilog / 仿真
+build/
+obj_dir/
+*.vcd
+*.fst
+*.out
+*.o
+
+# RISC-V 工具链产物
+*.elf
+*.bin
+*.dump
+*.hex
+
+# 编辑器 / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 操作系统
+.DS_Store
+Thumbs.db
+desktop.ini
