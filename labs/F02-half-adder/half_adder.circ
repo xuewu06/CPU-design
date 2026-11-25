@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="4.0.0" version="1.0">
+  <lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+  </options>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <comp lib="0" loc="(100,100)" name="Pin">
+      <a name="label" val="A"/>
+      <a name="appearance" val="classic"/>
+    </comp>
+    <comp lib="0" loc="(100,300)" name="Pin">
+      <a name="label" val="B"/>
+      <a name="appearance" val="classic"/>
+    </comp>
+    <comp lib="0" loc="(400,140)" name="Pin">
+      <a name="label" val="S"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="appearance" val="classic"/>
+    </comp>
+    <comp lib="0" loc="(400,240)" name="Pin">
+      <a name="label" val="C"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="appearance" val="classic"/>
+    </comp>
+    <comp lib="1" loc="(300,140)" name="XOR Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(300,240)" name="AND Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <wire from="(100,100)" to="(200,100)"/>
+    <wire from="(200,100)" to="(200,130)"/>
+    <wire from="(200,130)" to="(270,130)"/>
+    <wire from="(200,130)" to="(200,230)"/>
+    <wire from="(200,230)" to="(270,230)"/>
+    <wire from="(100,300)" to="(230,300)"/>
+    <wire from="(230,300)" to="(230,250)"/>
+    <wire from="(230,250)" to="(270,250)"/>
+    <wire from="(230,250)" to="(230,150)"/>
+    <wire from="(230,150)" to="(270,150)"/>
+    <wire from="(300,140)" to="(400,140)"/>
+    <wire from="(300,240)" to="(400,240)"/>
+  </circuit>
+</project>

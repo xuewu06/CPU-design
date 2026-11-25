@@ -1,0 +1,7 @@
+# Half adder test vector
+# S = A XOR B (sum), C = A AND B (carry)
+A B S C
+0 0 0 0
+0 1 1 0
+1 0 1 0
+1 1 0 1
